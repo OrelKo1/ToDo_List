@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#items {
+    margin-bottom: 30px;
+    /* Increased margin to separate items from the button */
+    text-align: left;
+    max-height: 300px;
+    /* Limit height for scrolling */
+    overflow-y: auto;
+    /* Enable scrolling if content overflows */
+}
+
+input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-right: 10px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+button {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+    /* Add margin to separate button from input */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button:active {
+    background-color: #1e7e34;
+    transform: scale(0.98);
+}
+
+.item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+.item-text {
+    margin-right: 10px;
+    flex-grow: 1;
+}
+
+.item-button {
+    background-color: #dc3545;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    color: #ffffff;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.item-button:hover {
+    background-color: #c82333;
+}
+
+.item-button:active {
+    background-color: #bd2130;
+    transform: scale(0.98);
+}
+
+.watermark {
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    font-size: 10px; 
+    color: rgba(0, 0, 0, 0.2); 
+    pointer-events: none; 
+    z-index: 9999; 
+    background: rgba(255, 255, 255, 0.5); 
+    padding: 5px; 
+    font-family: Arial, sans-serif; 
+}
